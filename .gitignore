@@ -1,0 +1,4 @@
+minhook/**/
+*.obj
+.vscode
+build/
