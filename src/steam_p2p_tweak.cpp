@@ -71,7 +71,7 @@ void ApplySDRPenalty()
         if (utilsPtr)
         {
             // 106 = k_ESteamNetworkingConfig_P2P_Transport_SDR_Penalty
-            Flat_SetGlobalConfigValueInt32(utilsPtr, 106, 200);
+            Flat_SetGlobalConfigValueInt32(utilsPtr, 106, 300);
             // 105 = k_ESteamNetworkingConfig_P2P_Transport_ICE_Penalty
             Flat_SetGlobalConfigValueInt32(utilsPtr, 105, 0);
             // Allow ALL ICE routes
@@ -97,12 +97,12 @@ void ApplySDRPenalty()
 	k_ESteamNetworkingConfig_LogLevel_SDRRelayPings = 18, // [global int32] Ping relays
 */
             // 6 = k_ESteamNetworkingSocketsDebugOutputType_Verbose
-            Flat_SetGlobalConfigValueInt32(utilsPtr, 13, 6);
-            Flat_SetGlobalConfigValueInt32(utilsPtr, 14, 6);
+            // Flat_SetGlobalConfigValueInt32(utilsPtr, 13, 6);
+            // Flat_SetGlobalConfigValueInt32(utilsPtr, 14, 6);
             // Flat_SetGlobalConfigValueInt32(utilsPtr, 15, 6);
             Flat_SetGlobalConfigValueInt32(utilsPtr, 16, 6);
             Flat_SetGlobalConfigValueInt32(utilsPtr, 17, 6);
-            Flat_SetGlobalConfigValueInt32(utilsPtr, 18, 6);
+            // Flat_SetGlobalConfigValueInt32(utilsPtr, 18, 6);
 #endif
         }
     }
