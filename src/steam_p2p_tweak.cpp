@@ -28,7 +28,7 @@ typedef void *(__cdecl *GetUtils_t)();
 typedef bool(__cdecl *SetConfig_t)(void *pUtils, int eConfigValue, int nValue);
 
 #define LOG_DEBUG
-void __stdcall MySteamNetDebug(int nType, const char *pszMsg)
+void __cdecl MySteamNetDebug(int nType, const char *pszMsg)
 {
     static FILE *g_LogFile = nullptr;
     static LONG g_Init = 0;
